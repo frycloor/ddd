@@ -93,6 +93,13 @@ logs/
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore a literal folder named `#` (some virtualenvs were added to workspace)
+\#/
+\#/**
+
+# Ignore legacy/accidental backend folder
+backen/
 .coverage
 coverage.xml
 htmlcov/
