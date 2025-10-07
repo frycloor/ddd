@@ -100,6 +100,21 @@ logs/
 
 # Ignore legacy/accidental backend folder
 backen/
+
+# Ignore project archive folders and archive file formats
+archive/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.bak
+
+# ignore virtualenv dist-info/vendor txts that editors sometimes surface as problems
+**/site-packages/**/*.txt
+**/Lib/site-packages/**/*.txt
+**/*-*.dist-info/*.txt
 .coverage
 coverage.xml
 htmlcov/

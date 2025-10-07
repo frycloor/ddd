@@ -1,0 +1,30 @@
+{
+  "name": "unified-command-center",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"npm:backend:dev\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "backend:dev": "uvicorn backend.main:app --reload --port 8000",
+    "backend:create-db": "python backend/scripts/create_db.py"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.544.0",
+    "@google/genai": "^1.22.0",
+    "recharts": "^3.2.1",
+    "framer-motion": "^12.23.22",
+    "react-leaflet": "^5.0.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@types=node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "concurrently": "^8.2.0"
+  }
+}
